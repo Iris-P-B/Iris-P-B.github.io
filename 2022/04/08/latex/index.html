@@ -1,0 +1,640 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Latex | Tír na nÓg</title><meta name="author" content="Tír na nÓg"><meta name="copyright" content="Tír na nÓg"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="written by Smileyan  python 代码1234567891011121314151617import jsdef maxSubList(labels):    index &#x3D; -1    maxLength &#x3D; 0    countLength &#x3D; 0    # 循环一次    for i, one in enumerate(labels):        if (one">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Latex">
+<meta property="og:url" content="http://example.com/2022/04/08/latex/index.html">
+<meta property="og:site_name" content="Tír na nÓg">
+<meta property="og:description" content="written by Smileyan  python 代码1234567891011121314151617import jsdef maxSubList(labels):    index &#x3D; -1    maxLength &#x3D; 0    countLength &#x3D; 0    # 循环一次    for i, one in enumerate(labels):        if (one">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/avatar2.png">
+<meta property="article:published_time" content="2022-04-08T07:33:01.000Z">
+<meta property="article:modified_time" content="2023-08-01T10:42:34.749Z">
+<meta property="article:author" content="Tír na nÓg">
+<meta property="article:tag" content="demo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/avatar2.png"><link rel="shortcut icon" href="/img/logo1.svg"><link rel="canonical" href="http://example.com/2022/04/08/latex/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Latex',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-08-01 18:42:34'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar2.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/banner1.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Tír na nÓg"><img class="site-icon" src="/img/logo1.svg"/><span class="site-name">Tír na nÓg</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Latex</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-04-08T07:33:01.000Z" title="Created 2022-04-08 15:33:01">2022-04-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-08-01T10:42:34.749Z" title="Updated 2023-08-01 18:42:34">2023-08-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/latex/">latex</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Latex"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>written by <a target="_blank" rel="noopener" href="https://smileyan.cn/">Smileyan</a></p>
+</blockquote>
+<h2 id="python-代码"><a href="#python-代码" class="headerlink" title="python 代码"></a>python 代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> js</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">maxSubList</span>(<span class="params">labels</span>):</span><br><span class="line">    index = -<span class="number">1</span></span><br><span class="line">    maxLength = <span class="number">0</span></span><br><span class="line">    countLength = <span class="number">0</span></span><br><span class="line">    <span class="comment"># 循环一次</span></span><br><span class="line">    <span class="keyword">for</span> i, one <span class="keyword">in</span> <span class="built_in">enumerate</span>(labels):</span><br><span class="line">        <span class="keyword">if</span> (one == <span class="number">1</span>):</span><br><span class="line">            countLength += <span class="number">1</span></span><br><span class="line">            <span class="comment"># 如果检测到更大的子序列</span></span><br><span class="line">            <span class="keyword">if</span>(countLength &gt; maxLength):</span><br><span class="line">                maxLength = countLength</span><br><span class="line">                index = i</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">        	<span class="comment"># 子序列长度结束计数</span></span><br><span class="line">            countLength = <span class="number">0</span></span><br><span class="line">    <span class="keyword">return</span> maxLength,index</span><br></pre></td></tr></table></figure>
+
+<h2 id="c-代码"><a href="#c-代码" class="headerlink" title="c++ 代码"></a>c++ 代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 注释</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> x,y;</span><br><span class="line">  cin&gt;&gt;x;</span><br><span class="line">  <span class="comment">// 注释</span></span><br><span class="line">  cin&gt;&gt;y;</span><br><span class="line">  cout&lt;&lt;x+y&lt;&lt;endl;cout&lt;&lt;x+y&lt;&lt;endl;cout&lt;&lt;x+y&lt;&lt;endl;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>c 代码</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line">using namespace <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">  <span class="type">int</span> x,y;</span><br><span class="line">  <span class="built_in">cin</span>&gt;&gt;x;</span><br><span class="line">  <span class="built_in">cin</span>&gt;&gt;y;</span><br><span class="line">  <span class="built_in">cout</span>&lt;&lt;x+y&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>java 代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> cn.smileyan;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> yanshili</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">y</span> <span class="operator">=</span> <span class="number">18</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i&lt;y; i++) &#123;</span><br><span class="line">            x += i;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>html</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Bootstrap5 实例<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container-fluid p-5 bg-primary text-white text-center&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>我的第一个 Bootstrap 页面<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>这是一个响应式页面，重置浏览器大小查看效果!<span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  </span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container mt-5&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;row&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col-sm-4&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">h3</span>&gt;</span>第一列<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>菜鸟教程<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>学的不仅是技术，更是梦想！！！<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col-sm-4&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">h3</span>&gt;</span>第二列<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>菜鸟教程<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>学的不仅是技术，更是梦想！！！<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col-sm-4&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">h3</span>&gt;</span>第三列<span class="tag">&lt;/<span class="name">h3</span>&gt;</span>        </span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>菜鸟教程<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>学的不仅是技术，更是梦想！！！<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<p>css</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#rcorners1</span> &#123;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">25px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#8AC007</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">20px</span>; </span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">150px</span>;    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#rcorners2</span> &#123;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">25px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#8AC007</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">20px</span>; </span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">150px</span>;    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.rcorners3</span> &#123;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">25px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">/images/paper.gif</span>);</span><br><span class="line">    <span class="attribute">background-position</span>: left top;</span><br><span class="line">    <span class="attribute">background-repeat</span>: repeat;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">20px</span>; </span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">150px</span>;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>javascript</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">displayDate</span>(<span class="params"></span>)&#123;</span><br><span class="line">	<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;demo&quot;</span>).<span class="property">innerHTML</span>=<span class="title class_">Date</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="scala"><a href="#scala" class="headerlink" title="scala"></a>scala</h2><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">object</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">main</span></span>(args: <span class="type">Array</span>[<span class="type">String</span>]): <span class="type">Unit</span> = &#123;</span><br><span class="line">    println(<span class="string">&quot;Hello, world!&quot;</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="bash"><a href="#bash" class="headerlink" title="bash"></a>bash</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~</span><br><span class="line">$ npm install hello-world</span><br><span class="line">$ git <span class="built_in">clone</span> wwesf</span><br><span class="line">$ yum -y install </span><br><span class="line">$ make &amp; make install</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="字母"><a href="#字母" class="headerlink" title="字母"></a>字母</h1><table>
+<thead>
+<tr>
+<th align="center">字母</th>
+<th align="center">表达式</th>
+<th align="center">字母</th>
+<th align="center">符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$\theta$</td>
+<td align="center">\theta</td>
+<td align="center">$\upsilon$</td>
+<td align="center">\upsilon</td>
+</tr>
+<tr>
+<td align="center">$\sigma$</td>
+<td align="center">\sigma</td>
+<td align="center">$\lambda$</td>
+<td align="center">\lambda</td>
+</tr>
+<tr>
+<td align="center">$\alpha$</td>
+<td align="center">\alpha</td>
+<td align="center">$\Omega$</td>
+<td align="center">\Omega</td>
+</tr>
+<tr>
+<td align="center">$\beta$</td>
+<td align="center">\beta</td>
+<td align="center">$\Phi$</td>
+<td align="center">\Phi</td>
+</tr>
+<tr>
+<td align="center">$\gamma$</td>
+<td align="center">\gamma</td>
+<td align="center">$\varphi$</td>
+<td align="center">\varphi</td>
+</tr>
+<tr>
+<td align="center">$\phi$</td>
+<td align="center">\phi</td>
+<td align="center">$\Pi$</td>
+<td align="center">\pi</td>
+</tr>
+<tr>
+<td align="center">$\mu$</td>
+<td align="center">\mu</td>
+<td align="center">$\omega$</td>
+<td align="center">\omega</td>
+</tr>
+<tr>
+<td align="center">$\xi$</td>
+<td align="center">\xi</td>
+<td align="center">$\psi$</td>
+<td align="center">\psi</td>
+</tr>
+<tr>
+<td align="center">$\pi$</td>
+<td align="center">\pi</td>
+<td align="center">$\chi$</td>
+<td align="center">\chi</td>
+</tr>
+<tr>
+<td align="center">$\delta$</td>
+<td align="center">\delta</td>
+<td align="center">$\tau$</td>
+<td align="center">\tau</td>
+</tr>
+<tr>
+<td align="center">$\epsilon$</td>
+<td align="center">\epsilon</td>
+<td align="center">$\epsilon$</td>
+<td align="center">\epsilon</td>
+</tr>
+<tr>
+<td align="center">$\zeta$</td>
+<td align="center">\zeta</td>
+<td align="center">$\varepsilon$</td>
+<td align="center">\varepsilon</td>
+</tr>
+<tr>
+<td align="center">$\eta$</td>
+<td align="center">\eta</td>
+<td align="center">$\rho$</td>
+<td align="center">\rho</td>
+</tr>
+<tr>
+<td align="center">$\partial$​</td>
+<td align="center">\partial</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p>有一些字母的大写就是大写第一个字符即可。比如 $\Tau$ \Tau 是 $\tau$ \tau 的大写。 </p>
+<p>哥特体：</p>
+<p>比如说字母 S，\mathfrak {S} ：<big><big>$\mathfrak{S}$ </big></big></p>
+<table>
+<thead>
+<tr>
+<th align="center">字体名</th>
+<th align="center">表达式</th>
+<th align="center">例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">手写体</td>
+<td align="center">\mathcal { }</td>
+<td align="center">$\mathcal {A,B,C}$</td>
+</tr>
+<tr>
+<td align="center">哥特体</td>
+<td align="center">\mathfrak { }</td>
+<td align="center">$\mathfrak{A,B,C}$</td>
+</tr>
+<tr>
+<td align="center">正粗体</td>
+<td align="center">\mathbf { }</td>
+<td align="center">$\mathbf{A,B,C}$</td>
+</tr>
+<tr>
+<td align="center">黑板粗体</td>
+<td align="center">\mathbb { }</td>
+<td align="center">$\mathbb{A,B,C}$</td>
+</tr>
+<tr>
+<td align="center">斜体</td>
+<td align="center">\mathif { }</td>
+<td align="center">$\mathit{A,B,C}$</td>
+</tr>
+<tr>
+<td align="center">罗马体</td>
+<td align="center">\mathrm { }</td>
+<td align="center">$\mathrm{A,B,C}$</td>
+</tr>
+</tbody></table>
+<h3 id="运算符号"><a href="#运算符号" class="headerlink" title="运算符号"></a>运算符号</h3><table>
+<thead>
+<tr>
+<th align="center">符号</th>
+<th align="center">表达式</th>
+<th align="center">解释（索引）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$\times$</td>
+<td align="center">\times</td>
+<td align="center">乘法</td>
+</tr>
+<tr>
+<td align="center">$\div$</td>
+<td align="center">\div</td>
+<td align="center">除法</td>
+</tr>
+<tr>
+<td align="center">$\pm$</td>
+<td align="center">\pm</td>
+<td align="center">正负号（正或负）</td>
+</tr>
+<tr>
+<td align="center">$\forall$</td>
+<td align="center">\forall</td>
+<td align="center">任意，所有</td>
+</tr>
+<tr>
+<td align="center">$\exists$</td>
+<td align="center">\exist , \exists</td>
+<td align="center">存在</td>
+</tr>
+<tr>
+<td align="center">$\not&#x3D;$</td>
+<td align="center">\not&#x3D;</td>
+<td align="center">不等于，不等号</td>
+</tr>
+<tr>
+<td align="center">$\approx$</td>
+<td align="center">\approx</td>
+<td align="center">约等于，约等号</td>
+</tr>
+<tr>
+<td align="center">$\geq$</td>
+<td align="center">\geq，\ge</td>
+<td align="center">大于等于</td>
+</tr>
+<tr>
+<td align="center">$\leq$</td>
+<td align="center">\leq</td>
+<td align="center">小于等于</td>
+</tr>
+<tr>
+<td align="center">$\gg$</td>
+<td align="center">\gg</td>
+<td align="center">远大于</td>
+</tr>
+<tr>
+<td align="center">$\ll$</td>
+<td align="center">\ll</td>
+<td align="center">远小于</td>
+</tr>
+<tr>
+<td align="center">$\nabla$</td>
+<td align="center">\nabla</td>
+<td align="center">算子，倒三角，偏导，梯度</td>
+</tr>
+<tr>
+<td align="center">$\in$</td>
+<td align="center">\in</td>
+<td align="center">属于</td>
+</tr>
+<tr>
+<td align="center">$\subset$</td>
+<td align="center">\sub ，\subset</td>
+<td align="center">包含于</td>
+</tr>
+<tr>
+<td align="center">$\subseteq$</td>
+<td align="center">\subseteq</td>
+<td align="center">包含于</td>
+</tr>
+<tr>
+<td align="center">$\subsetneq$</td>
+<td align="center">\subsetneq</td>
+<td align="center">真包含于</td>
+</tr>
+<tr>
+<td align="center">$\cdot$</td>
+<td align="center">\cdot</td>
+<td align="center">点，点乘</td>
+</tr>
+<tr>
+<td align="center">$\partial$</td>
+<td align="center">\partial</td>
+<td align="center">求偏导</td>
+</tr>
+<tr>
+<td align="center">$\infty$</td>
+<td align="center">\infty</td>
+<td align="center">无穷</td>
+</tr>
+<tr>
+<td align="center">$\propto$</td>
+<td align="center">\propto</td>
+<td align="center">近似于，似然</td>
+</tr>
+<tr>
+<td align="center">$\dot{x}$</td>
+<td align="center">\dot{x}</td>
+<td align="center">上点，导数点</td>
+</tr>
+<tr>
+<td align="center">$\vec{AB}$</td>
+<td align="center">\vec{AB}</td>
+<td align="center">向量</td>
+</tr>
+<tr>
+<td align="center">$\int_{-N}^{N} e^x, dx$</td>
+<td align="center">\int_{-N}^{N} e^x, dx</td>
+<td align="center">积分</td>
+</tr>
+<tr>
+<td align="center">$\iint_{D}^{W} , dx,dy$</td>
+<td align="center">\iint_{D}^{W} , dx,dy</td>
+<td align="center">双重积分</td>
+</tr>
+<tr>
+<td align="center">$\iiint_{E}^{V} , dx,dy,dz$</td>
+<td align="center">\iiint_{E}^{V} , dx,dy,dz</td>
+<td align="center">三重积分</td>
+</tr>
+<tr>
+<td align="center">$\sum_{k&#x3D;1}^N k^2$</td>
+<td align="center">\sum_{k&#x3D;1}^N k^2</td>
+<td align="center">求和</td>
+</tr>
+<tr>
+<td align="center">$\prod_{i&#x3D;1}^N x_i$</td>
+<td align="center">\prod_{i&#x3D;1}^N x_i</td>
+<td align="center">连乘</td>
+</tr>
+<tr>
+<td align="center">$\sim$</td>
+<td align="center">\sim</td>
+<td align="center">波浪号</td>
+</tr>
+<tr>
+<td align="center">$\backsim$</td>
+<td align="center">\backsim</td>
+<td align="center">反波浪号</td>
+</tr>
+<tr>
+<td align="center">$\S$</td>
+<td align="center">\S</td>
+<td align="center">章节符号</td>
+</tr>
+<tr>
+<td align="center">$\ell$</td>
+<td align="center">\ell</td>
+<td align="center">范数</td>
+</tr>
+<tr>
+<td align="center">$|$</td>
+<td align="center">\</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">$\text{/}$</td>
+<td align="center">\text{\&#x2F;}</td>
+<td align="center">反斜杆</td>
+</tr>
+<tr>
+<td align="center">\</td>
+<td align="center">\</td>
+<td align="center">反斜杠</td>
+</tr>
+<tr>
+<td align="center">$\lfloor x \rfloor$</td>
+<td align="center">\lfloor x \rfloor</td>
+<td align="center">向下取整</td>
+</tr>
+<tr>
+<td align="center">$\lceil x \rceil$</td>
+<td align="center">\lceil x \rceil</td>
+<td align="center">向上取整</td>
+</tr>
+</tbody></table>
+<p>反斜杠可以考虑不加入 $$ 中间直接使用，需要输入两个 反斜杠即可。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">方法一：</span><br><span class="line"></span><br><span class="line">$$ </span><br><span class="line">f(x)=\left\&#123;</span><br><span class="line">\begin&#123;aligned&#125;</span><br><span class="line">x &amp; = &amp; \cos(t) \\</span><br><span class="line">y &amp; = &amp; \sin(t) \\</span><br><span class="line">z &amp; = &amp; \frac xy</span><br><span class="line">\end&#123;aligned&#125;</span><br><span class="line">\right.</span><br><span class="line">$$</span><br><span class="line"></span><br><span class="line">方法二：</span><br><span class="line">$$ </span><br><span class="line">F^&#123;HLLC&#125;=\left\&#123;</span><br><span class="line">\begin&#123;array&#125;&#123;rcl&#125;</span><br><span class="line">F_L       &amp;      &amp; &#123;0      &lt;      S_L&#125;\\</span><br><span class="line">F^*_L     &amp;      &amp; &#123;S_L \leq 0 &lt; S_M&#125;\\</span><br><span class="line">F^*_R     &amp;      &amp; &#123;S_M \leq 0 &lt; S_R&#125;\\</span><br><span class="line">F_R       &amp;      &amp; &#123;S_R \leq 0&#125;</span><br><span class="line">\end&#123;array&#125; \right. </span><br><span class="line">$$</span><br><span class="line"></span><br><span class="line">方法三:</span><br><span class="line">$$</span><br><span class="line">f(x)=</span><br><span class="line">\begin&#123;cases&#125;</span><br><span class="line">0,&amp; \text&#123;x=0&#125;\\</span><br><span class="line">1,&amp; \text&#123;x!=0&#125;</span><br><span class="line">\end&#123;cases&#125;</span><br><span class="line">$$</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>对应的效果如图：</p>
+<p>
+$$
+f(x)=\left\{
+\begin{aligned}
+x & = & \cos(t) \\
+y & = & \sin(t) \\
+z & = & \frac xy
+\end{aligned}
+\right.
+$$
+</p>
+
+
+<p>
+$$
+F^{HLLC}=\left\{
+\begin{array}{rcl}
+F_L       &      & {0      <      S_L}\\
+F^*_L     &      & {S_L \leq 0 < S_M}\\
+F^*_R     &      & {S_M \leq 0 < S_R}\\
+F_R       &      & {S_R \leq 0}
+\end{array} \right. 
+$$
+</p>
+
+
+<p>
+$$
+f(x)=
+\begin{cases}
+0,& \text{x=0}\\
+1,& \text{x!=0}
+\end{cases}
+$$
+</p>
+
+
+
+<p>字母头上有：</p>
+<table>
+<thead>
+<tr>
+<th align="center">符号</th>
+<th align="center">表达式</th>
+<th align="center">解释(索引)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$\vec{c}$</td>
+<td align="center">\vec{c}</td>
+<td align="center">向量c</td>
+</tr>
+<tr>
+<td align="center">$\overleftarrow{ab}$</td>
+<td align="center">\overleftarrow{ab}</td>
+<td align="center">指向左边</td>
+</tr>
+<tr>
+<td align="center">$\overrightarrow{ab}$</td>
+<td align="center">\overrightarrow</td>
+<td align="center">指向右边</td>
+</tr>
+<tr>
+<td align="center">$\hat{A}$</td>
+<td align="center">\hat{A}</td>
+<td align="center">帽</td>
+</tr>
+<tr>
+<td align="center">$\widehat{A}$</td>
+<td align="center">\widehat</td>
+<td align="center">大帽，宽帽</td>
+</tr>
+<tr>
+<td align="center">$\overline{ab}$</td>
+<td align="center">\overline</td>
+<td align="center">上划线</td>
+</tr>
+<tr>
+<td align="center">$\underline{ab}$</td>
+<td align="center">\underline</td>
+<td align="center">下划线</td>
+</tr>
+<tr>
+<td align="center">$\overset{\frown}{ab}$</td>
+<td align="center">\overset</td>
+<td align="center">上弧</td>
+</tr>
+<tr>
+<td align="center">$\widetilde{ab}$</td>
+<td align="center">\widetilde{ab}</td>
+<td align="center">上波浪号</td>
+</tr>
+<tr>
+<td align="center">$\overbrace{1+2+\cdots+100}$</td>
+<td align="center">\overbrace{1+2+\cdots+100}</td>
+<td align="center">上括号</td>
+</tr>
+<tr>
+<td align="center">$\overbrace{1+2+\cdots+100}^{5050}$</td>
+<td align="center">\overbrace{1+2+\cdots+100}^{5050}</td>
+<td align="center">上括号</td>
+</tr>
+<tr>
+<td align="center">$\underbrace{a+b+\cdots+z}$</td>
+<td align="center">\underbrace{a+b+\cdots+z}</td>
+<td align="center">下括号</td>
+</tr>
+<tr>
+<td align="center">$\underbrace{a+b+\cdots+z}_{26}$</td>
+<td align="center">\underbrace{a+b+\cdots+z}_{26}</td>
+<td align="center">下括号</td>
+</tr>
+</tbody></table>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/young951023/article/details/79601664">https://blog.csdn.net/young951023/article/details/79601664</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/q735613050/p/7474449.html">https://www.cnblogs.com/q735613050/p/7474449.html</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">Tír na nÓg</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2022/04/08/latex/">http://example.com/2022/04/08/latex/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/demo/">demo</a></div><div class="post_share"><div class="social-share" data-image="/img/avatar2.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/04/08/javascript_4/" title="javascript_4"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">javascript_4</div></div></a></div><div class="next-post pull-right"><a href="/2022/04/08/linux_1/" title="linux_1"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">linux_1</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar2.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Tír na nÓg</div><div class="author-info__description">I solemnly swear that I am up to no good</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#python-%E4%BB%A3%E7%A0%81"><span class="toc-number">1.</span> <span class="toc-text">python 代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#c-%E4%BB%A3%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text">c++ 代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scala"><span class="toc-number">3.</span> <span class="toc-text">scala</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bash"><span class="toc-number">4.</span> <span class="toc-text">bash</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E6%AF%8D"><span class="toc-number"></span> <span class="toc-text">字母</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6%E5%8F%B7"><span class="toc-number">0.1.</span> <span class="toc-text">运算符号</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Tír na nÓg</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
